@@ -1,0 +1,38 @@
+#navbar {
+    width: 100%;
+    float: middle;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+#temp navbar {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+#element {
+    float: middle;
+    display: inline;
+}
+
+#element a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+    border-right: 1px solid #ccc;
+}
+#element a:hover {
+    color: #c00;
+    background-color: #fff;
+}
+#element a.active {
+    background-color: rgb(201, 205, 248);
+}

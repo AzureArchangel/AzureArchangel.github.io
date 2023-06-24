@@ -1,0 +1,74 @@
+#firstHomeBanner {
+  background-color: #55e6dc;
+  width: 100%;
+  height: 500px;
+}
+
+#bsHeader {
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 72px;
+  top: 
+}
+
+#gameWritingHeader {
+  color: white;
+  font-family: 'Georgia', serif;
+  font-size: 24px;
+}
+
+#navbar {
+  position: absolute;
+  top: 450px;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  background-color: white;
+  font-family: 'Georgia', serif;
+}
+
+#element {
+  display: inline;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  border-left: 1px solid #ccc;
+}
+
+#header {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#paragraph {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#element a:hover {
+    color: #c00;
+    background-color: #fff;
+}
+#element a.active {
+    background-color: rgb(201, 205, 248);
+}
+
+.first-element {
+  border-left: 1px solid #ccc;
+}
+
+.last-element {
+  border-right: 1px solid #ccc;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.awake {
+  color: white;
+}

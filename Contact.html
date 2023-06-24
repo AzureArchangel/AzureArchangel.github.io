@@ -2,16 +2,107 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
 </head>
 <body>
 
+<center>
 <div id= "navbar">
-  <div id= "element"> HOME </div>
-  <div id= "element"> ABOUT ME </div>
-  <div id= "element"> PROJECTS </div>
-  <div id= "element"> RESUME </div>
-  <div id= "element"> BLOG </div>
-  <div id= "element"> CONTACT </div>
+  <div class= "first-element" id= "element"><a href="./index.html">HOME</a></div>
+  <div id= "element"><a href="./About Me.html">ABOUT ME</a></div>
+  <div id= "element"><a href="./Projects.html">PROJECTS</a></div>
+  <div id= "element"><a href="./Resume.html">RESUME</a></div>
+  <div id= "element"><a href="./Blog.html">BLOG</a></div>
+  <div class= "last-element active" id= "element"><a class= "awake" href="./Contact.html">CONTACT</a></div>
+</div>
+</center>
+
+<br>
+<br>
+
+<div id="contactPandH">
+   <div id= "contactHeader"><h1>Contact</h1><div>
+   <div id= "contactParagraph"><p>I look forward to hearing from you!</p></div>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<script>
+var personName = document.getElementById("name").value;
+var personEmail = document.getElementById("email").value;
+var emailSubject = document.getElementById("subject").value;
+var emailMessage = document.getElementById("message").value;
+console.log(personEmail);
+
+function extractText() {
+  const input = document.getElementById("name");
+  const personName = input.value;
+  console.log(personName);
+}
+
+/*var input1Value = "<?php echo isset($_POST['name']) ? $_POST['name'] : '' ?>";
+console.log(inputValue);*/
+
+function myFunction() {
+var pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+var result = pattern.test(personEmail);
+console.log(result);
+  if (result === true) {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "saitouforsoreeyes@gmail.com",
+        Password: "Icecream17",
+        To: 'saitouforsoreeyes@gmail.com',
+        From: personEmail,
+        Subject: emailSubject,
+        Body: emailMessage,
+      })
+        .then(function (message) {
+          alert("Email was sent successfully!");
+        });
+  }
+  else {
+    alert("Not a valid email. Please try again.");
+  }
+}
+
+console.log();
+
+function container() {
+  extractText();
+  myFunction();
+}
+
+/*function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'receiver@email_address.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+  }*/
+</script>
+
+<div>
+<form action="/action_page.php">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value=""><br><br>
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject" name="subject" value=""><br><br>
+  <label for="message">Message</label><br>
+  <input type="text" id="message" name="message" value=""><br><br>
+  <!--<button onclick="extractText()">Grab Text</button><br>-->
+  <input onclick="container()" type="submit" value="Submit">
+</form>
 </div>
 
 <script src="main.js"></script>

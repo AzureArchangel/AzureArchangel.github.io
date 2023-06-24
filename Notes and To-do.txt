@@ -1,0 +1,12 @@
+Notes/To-Do
+
+Last worked on: 6/16/23
+- Continued working on the Contact Me page; specifically started working on
+figuring out a submit form that a potential employer or curious person 
+could use to send me an email right from the "Contact Me" page on my website.
+
+To-Do:
+- Do homework assigned by Kelly
+- Watch the javascript email videos that Joeseph sent
+- Do further research on sending an email using javascript
+- Work on more general formatting across all pages when possible

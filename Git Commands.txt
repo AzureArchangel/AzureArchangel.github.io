@@ -1,0 +1,7 @@
+git clone [url]
+git add . = adding all
+git add text.txt = adding a single thing
+git commit
+git commit -m "commit message"
+git push = push changes
+git status = check status of branch

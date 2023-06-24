@@ -29,19 +29,24 @@
 </script>
 
 <script>
-var personName = document.getElementById("name").value;
-var personEmail = document.getElementById("email").value;
-var emailSubject = document.getElementById("subject").value;
-var emailMessage = document.getElementById("message").value;
-console.log(personEmail);
+var personName = "";
+var personEmail = "";
+var emailSubject = "";
+var emailMessage = "";
 
 function extractText() {
   const input = document.getElementById("name");
   personName = input.value;
   const email_input = document.getElementById("email");
   personEmail = email_input.value;
+  const subject_input = document.getElementById("subject");
+  emailSubject = subject_input.value;
+  const message_input = document.getElementById("message");
+  emailMessage = message_input.value;
   console.log(personName);
   console.log(personEmail);
+  console.log(emailSubject);
+  console.log(emailMessage);
 }
 
 /*var input1Value = "<?php echo isset($_POST['name']) ? $_POST['name'] : '' ?>";
@@ -52,7 +57,6 @@ function myFunction() {
 var pattern = /^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$/;
 var result = pattern.test(personEmail);
 console.log(result);
-console.log(personEmail);
   if (result === true) {
     Email.send({
         Host: "smtp.gmail.com",

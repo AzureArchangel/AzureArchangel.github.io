@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  font-family: 'Playfair Display', serif;
+  color: #4D4D4D;
+}
+
 #firstHomeBanner {
   background-color: #55e6dc;
   width: 100%;
@@ -13,7 +20,7 @@
 
 #gameWritingHeader {
   color: white;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
 }
 
